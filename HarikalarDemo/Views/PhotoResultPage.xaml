@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HarikalarDemo.Views.PhotoResultPage"
+             xmlns:vm="clr-namespace:HarikalarDemo.ViewModels"
+             
+             Title="PhotoResultPage">
+
+    <ScrollView>
+        <Grid Padding="20" BackgroundColor="#FFFFFF">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Image x:Name="imagePreview"
+                          VerticalOptions="Center"
+                          HorizontalOptions="Fill" MinimumWidthRequest="50" Grid.Row="4" MaximumWidthRequest="600" BackgroundColor="#FFFFFF"/>
+
+           
+            <Button Text="Send"
+            FontFamily="RubikRegular"
+            FontSize="21"
+             x:Name="mailButton"
+             MinimumHeightRequest="50"
+            MinimumWidthRequest="200"
+            BackgroundColor="#D9D9D9"
+            Clicked="MailButtonClicked"  
+        VerticalOptions="End"
+            Grid.Row="7"
+        HorizontalOptions="Center" 
+            />
+            
+            <Entry x:Name="mailEntry"
+                   Placeholder="Email Address"
+                   Grid.Row="5"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   MinimumHeightRequest="50"
+                   MinimumWidthRequest="400"
+                   FontSize="21"
+                   FontFamily="RubikRegular"
+                   TextColor="#000000"
+                   
+                   />
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
